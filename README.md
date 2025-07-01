@@ -30,9 +30,19 @@ This website is automatically synced to the public repository [proliferaite/prol
 
 Place your website files directly in this folder:
 - `index.html` - Main landing page
+- `styles.css` - Styling
+- `manifest.json` - Web app manifest
+- `wrangler.toml` - Cloudflare Pages configuration
 - `assets/` - Static assets (CSS, JS, images)
 - `*.html` - Additional pages
 - Other static website files
+
+## Cloudflare Pages Configuration
+
+The `wrangler.toml` file configures Cloudflare Pages to:
+- Use the root directory as the build output (instead of expecting a "public" folder)
+- Deploy static files without a build process
+- Handle both production and preview environments
 
 ## About Proliferaite
 
