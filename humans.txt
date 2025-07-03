@@ -1,0 +1,84 @@
+/* TEAM */
+Developer: Proliferaite Team
+Contact: business@proliferaite.com
+From: Global (Remote-first)
+Website: https://proliferaite.com
+
+/* COMPANY */
+Founded: 2024
+Mission: Where Innovation Proliferates
+Focus: AI-powered mobile development
+Specialization: Sports technology and video analysis
+
+/* PRODUCTS */
+PitchGrid: Professional video analysis for sports
+Custom Mobile Apps: Bespoke solutions for various industries
+AI Development Tools: Internal productivity enhancement
+
+/* SITE */
+Last update: 2025/01/25
+Language: English
+Doctype: HTML5
+IDE: VS Code, Android Studio, Xcode
+Technologies: HTML5, CSS3, JavaScript, PWA
+Hosting: Cloudflare Pages / GitHub Pages
+Version Control: Git
+
+/* TECH STACK */
+Mobile: Native Android (Kotlin/Java), iOS (Swift)
+AI/ML: TensorFlow, PyTorch, Core ML
+Cloud: Firebase, AWS, Google Cloud
+Database: SQLite, Room, Firestore
+Video Processing: MediaCodec, OpenGL, Metal
+Analytics: Firebase Analytics, Google Analytics
+
+/* VALUES */
+Mission: Democratize advanced technology through AI
+Vision: Accelerate innovation with intelligent development
+Focus: User experience, performance, AI integration
+Commitment: Continuous innovation and quality
+
+/* PARTNERS */
+Google Play Store: Verified developer
+AdSense: Monetization partner
+Cloud Providers: Scalable infrastructure solutions
+
+/* SPECIALTIES */
+Sports Technology: Athletic performance analysis
+Video Analysis: Advanced video processing and synchronization
+AI Integration: Machine learning in mobile applications
+Mobile Development: Cross-platform native applications
+
+/* CONTACT */
+General: business@proliferaite.com
+Support: support@proliferaite.com
+Privacy: privacy@proliferaite.com
+Website: https://proliferaite.com
+PitchGrid: https://pitchgrid.proliferaite.com
+
+                                   ___
+                              _.-'`   `'-._
+                           .-'               '-.
+                        .-'       .---.       '-.
+                     .-'         /     \         '-.
+                  .-'           |   AI  |           '-.
+               .-'              \     /              '-.
+            .-'                 '---'                 '-.
+         .-'            Proliferaite                    '-.
+      .-'       Where Innovation Proliferates            '-.
+   .-'                                                     '-.
+.-'          AI-Powered Mobile Development                   '-.
+'-._                                                       _.-'
+    '-._                                               _.-'
+        '-._                                       _.-'
+            '-._                               _.-'
+                '-._                       _.-'
+                    '-._               _.-'
+                        '-._       _.-'
+                            '-._.-'
+
+/* HUMANSTXT.ORG */
+We are humans who believe in the power of artificial intelligence to amplify human creativity and innovation. We build technology that helps people achieve their goals faster and more efficiently.
+
+/* PHILOSOPHY */
+Technology should augment human capabilities, not replace them. We use AI to accelerate development, enhance user experiences, and solve complex problems in sports, business, and beyond. 
