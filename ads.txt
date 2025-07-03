@@ -1,0 +1,10 @@
+# ads.txt file for proliferaite.com
+# This file declares authorized digital advertising sellers
+# Learn more: https://iabtechlab.com/ads-txt/
+
+# Google AdSense
+google.com, pub-XXXXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
+# Replace pub-XXXXXXXXXXXXXXXXXX with your actual AdSense Publisher ID
+# You can find your Publisher ID in your AdSense account under Settings > Account Information
+# It should look like: pub-1234567890123456 
