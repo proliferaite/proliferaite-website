@@ -3,8 +3,4 @@
 # Learn more: https://iabtechlab.com/ads-txt/
 
 # Google AdSense
-google.com, pub-XXXXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-
-# Replace pub-XXXXXXXXXXXXXXXXXX with your actual AdSense Publisher ID
-# You can find your Publisher ID in your AdSense account under Settings > Account Information
-# It should look like: pub-1234567890123456 
+google.com, pub-6742499397054869, DIRECT, f08c47fec0942fa0 
