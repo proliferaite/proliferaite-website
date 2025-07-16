@@ -16,4 +16,25 @@ compatibility_date = "2023-05-18"
 [env.production.vars]
 
 [env.preview]
-[env.preview.vars] 
+[env.preview.vars]
+
+# Redirects for clean URLs (301 redirects from .html versions)
+[[redirects]]
+from = "/about.html"
+to = "/about"
+status = 301
+
+[[redirects]]
+from = "/contact.html"
+to = "/contact"
+status = 301
+
+[[redirects]]
+from = "/terms.html"
+to = "/terms"
+status = 301
+
+[[redirects]]
+from = "/privacy-policy.html"
+to = "/privacy-policy"
+status = 301 
