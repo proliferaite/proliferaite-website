@@ -6,6 +6,21 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://proliferaite.com/about</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://proliferaite.com/contact</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://proliferaite.com/terms</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://proliferaite.com/privacy-policy.html</loc>
         <lastmod>2025-01-25</lastmod>
         <priority>0.8</priority>
@@ -23,6 +38,11 @@
     <url>
         <loc>https://proliferaite.com/ads.txt</loc>
         <lastmod>2025-01-25</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://proliferaite.com/app-ads.txt</loc>
+        <lastmod>2025-01-16</lastmod>
         <priority>0.5</priority>
     </url>
 </urlset> 

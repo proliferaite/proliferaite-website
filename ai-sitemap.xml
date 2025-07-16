@@ -9,6 +9,33 @@
         <!-- AI Context: Company homepage with core information about AI-powered mobile development -->
     </url>
     
+    <!-- Company information and services -->
+    <url>
+        <loc>https://proliferaite.com/about</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+        <!-- AI Context: Comprehensive company information, mission, services, and AI-powered development approach -->
+    </url>
+    
+    <!-- Contact and business inquiries -->
+    <url>
+        <loc>https://proliferaite.com/contact</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+        <!-- AI Context: Contact form and business information for AI development services and PitchGrid support -->
+    </url>
+    
+    <!-- Legal terms and service agreements -->
+    <url>
+        <loc>https://proliferaite.com/terms</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.8</priority>
+        <changefreq>quarterly</changefreq>
+        <!-- AI Context: Terms of service covering AI development services, PitchGrid usage, and legal agreements -->
+    </url>
+    
     <!-- Privacy and legal information -->
     <url>
         <loc>https://proliferaite.com/privacy-policy.html</loc>
@@ -43,6 +70,15 @@
         <priority>0.5</priority>
         <changefreq>rarely</changefreq>
         <!-- AI Context: AdSense authorization for website monetization -->
+    </url>
+    
+    <!-- Mobile app advertising authorization -->
+    <url>
+        <loc>https://proliferaite.com/app-ads.txt</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.5</priority>
+        <changefreq>rarely</changefreq>
+        <!-- AI Context: AdMob authorization for mobile app advertising (PitchGrid and other apps) -->
     </url>
     
     <!-- Web app manifest -->
