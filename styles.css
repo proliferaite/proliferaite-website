@@ -432,4 +432,264 @@ html {
 .nav-links a:focus {
     outline: 2px solid #00cc66;
     outline-offset: 2px;
+}
+
+/* Page-specific styles */
+.page-header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact page styles */
+.contact-section {
+    padding: 4rem 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00cc66;
+}
+
+.contact-info {
+    padding: 2rem;
+}
+
+.contact-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-item a {
+    color: #00cc66;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* About page styles */
+.about-section {
+    padding: 4rem 0;
+}
+
+.about-content {
+    margin-bottom: 3rem;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.services-grid,
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-item,
+.value-item {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-item h3,
+.value-item h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.service-item p,
+.value-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.product-showcase {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.product-item h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.product-item ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.product-item li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.about-cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #00cc66 0%, #00b359 100%);
+    color: white;
+    border-radius: 8px;
+    margin-top: 3rem;
+}
+
+.about-cta h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.about-cta p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Terms page styles */
+.terms-section {
+    padding: 4rem 0;
+}
+
+.terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terms-section-content {
+    margin-bottom: 3rem;
+}
+
+.terms-section-content h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.terms-section-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.terms-section-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.terms-section-content li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.terms-section-content a {
+    color: #00cc66;
+    text-decoration: none;
+}
+
+.terms-section-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for new pages */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .services-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+    }
 } 
