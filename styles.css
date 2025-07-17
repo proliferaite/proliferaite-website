@@ -1188,4 +1188,330 @@ html {
     .about-content h2 {
         font-size: 2rem;
     }
+}
+
+/* AI Innovation Page Styles */
+.ai-innovation-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+}
+
+.ai-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    border: 1px solid #e0f2fe;
+}
+
+.ai-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.ai-intro p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+/* Philosophy Grid */
+.ai-philosophy {
+    margin-bottom: 4rem;
+}
+
+.ai-philosophy h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.philosophy-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00cc66, #00a855);
+}
+
+.philosophy-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.philosophy-item h3::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #00cc66;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.philosophy-item p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Examples Grid */
+.ai-examples {
+    margin-bottom: 4rem;
+}
+
+.ai-examples h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.example-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.example-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.example-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    border-bottom: 2px solid #00cc66;
+    padding-bottom: 0.5rem;
+}
+
+.example-card p {
+    margin-bottom: 0.8rem;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.example-card p strong {
+    color: #2d3748;
+}
+
+/* Challenges Section */
+.ai-challenges {
+    margin-bottom: 4rem;
+}
+
+.ai-challenges h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.challenges-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.challenge-item {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #ef4444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.challenge-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #dc2626;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.challenge-item p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Tips Grid */
+.ai-tips {
+    margin-bottom: 4rem;
+}
+
+.ai-tips h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tip-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.tip-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+}
+
+.tip-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.tip-card p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Future Content */
+.future-content {
+    margin-bottom: 4rem;
+}
+
+.future-content h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.content-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.preview-item {
+    background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #f59e0b;
+    position: relative;
+}
+
+.preview-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #92400e;
+}
+
+.preview-item p {
+    color: #78350f;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.ai-cta {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.ai-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.ai-cta p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design for AI Innovation */
+@media (max-width: 768px) {
+    .philosophy-grid,
+    .examples-grid,
+    .tips-grid,
+    .content-preview {
+        grid-template-columns: 1fr;
+    }
+    
+    .ai-intro h2 {
+        font-size: 2rem;
+    }
+    
+    .ai-philosophy h2,
+    .ai-examples h2,
+    .ai-challenges h2,
+    .ai-tips h2,
+    .future-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 } 
