@@ -25,6 +25,11 @@ to = "/about.html"
 status = 200
 
 [[redirects]]
+from = "/our-story"
+to = "/our-story.html"
+status = 200
+
+[[redirects]]
 from = "/contact"
 to = "/contact.html"
 status = 200

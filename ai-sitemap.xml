@@ -18,6 +18,15 @@
         <!-- AI Context: Comprehensive company information, mission, services, and AI-powered development approach -->
     </url>
     
+    <!-- Development journey and technical story -->
+    <url>
+        <loc>https://proliferaite.com/our-story</loc>
+        <lastmod>2025-01-16</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <!-- AI Context: Complete development journey of PitchGrid, technical challenges, innovations, and lessons learned -->
+    </url>
+    
     <!-- Contact and business inquiries -->
     <url>
         <loc>https://proliferaite.com/contact</loc>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - The PitchGrid Development Journey | Proliferaite</title>
+    <meta name="description" content="The complete story of how PitchGrid was built - from softball fields to professional-grade app. Learn about our technical challenges, breakthroughs, and innovations.">
+    <link rel="canonical" href="https://proliferaite.com/our-story">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Story - The PitchGrid Development Journey">
+    <meta property="og:description" content="The complete story of how PitchGrid was built - from softball fields to professional-grade app.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proliferaite.com/our-story">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicon-192x192.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">Proliferaite</a>
+            </div>
+            <div class="nav-links">
+                <a href="about">About</a>
+                <a href="our-story">Our Story</a>
+                <a href="index.html#products">Products</a>
+                <a href="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Story Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Development Journey</h1>
+            <p>From Softball Fields to Professional-Grade App</p>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="story-section">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="story-intro">
+                <h2>The Beginning</h2>
+                <p>Every great app starts with a real problem. For PitchGrid, that problem became crystal clear during countless hours on softball fields, watching young athletes struggle to analyze their form and improve their technique.</p>
+                
+                <p>As a softball dad and tech professional, I saw the gap between what coaches needed and what technology provided. Expensive video analysis software existed for professional teams, but nothing was accessible to youth sports communities. That's when the idea for PitchGrid was born.</p>
+                
+                <p>What started as a simple concept - "What if we could sync multiple videos on a phone?" - turned into a 2+ year journey of solving complex technical challenges and building something that truly serves the sports community.</p>
+            </div>
+
+            <!-- Development Timeline -->
+            <div class="story-content">
+                <h2>The Development Journey</h2>
+                <p>Building PitchGrid has been an incredible journey of solving real problems with innovative solutions. Here's the complete story of how we turned a simple idea into a professional-grade application.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🏗️</div>
+                        <div class="timeline-content">
+                            <h3>The Foundation Phase (v1.0 - v1.15)</h3>
+                            <p><strong>The Challenge:</strong> Creating a multi-video synchronization system that actually works</p>
+                            <p>The early days were about solving the core problem: how do you sync multiple videos of different lengths and make them play together seamlessly? This wasn't just a technical challenge - it was about understanding how coaches and athletes actually use video analysis.</p>
+                            
+                            <p>We quickly discovered that existing video frameworks weren't designed for this kind of multi-stream synchronization. We had to build our own synchronization engine from scratch, handling everything from different frame rates to varying video lengths.</p>
+                            
+                            <div class="challenge-box">
+                                <strong>Major Challenge:</strong> Database corruption was destroying user layouts and saved configurations. We learned the hard way that protecting user data is more important than perfect migrations. The solution? We removed destructive fallbacks and made the app crash rather than lose precious user configurations. Better a temporary crash than permanent data loss.
+                            </div>
+                            
+                            <p>This phase taught us that user data is sacred. Coaches spend hours setting up perfect layouts for their athletes, and losing that work is devastating. We completely redesigned our data protection strategy around this principle.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🎯</div>
+                        <div class="timeline-content">
+                            <h3>The Precision Phase (v1.16 - v1.30)</h3>
+                            <p><strong>The Challenge:</strong> Making video analysis feel natural and intuitive</p>
+                            <p>This phase was all about user experience. We discovered that zoom states were being lost when users switched between apps - incredibly frustrating during analysis sessions. Imagine a coach showing an athlete a specific detail, then losing that exact view when a text message comes in.</p>
+                            
+                            <p>We realized that traditional app state management wasn't sufficient for our use case. Video analysis requires persistent, precise positioning that survives app backgrounding, ads, and even system interruptions.</p>
+                            
+                            <div class="challenge-box">
+                                <strong>Major Challenge:</strong> Users were losing their zoom settings during ads and app switching. We implemented persistent zoom states that only reset when YOU choose to reset them, never automatically. This required completely rethinking how we handle app lifecycle events.
+                            </div>
+                            
+                            <p>The breakthrough came when we realized that zoom state isn't just a UI preference - it's part of the analysis data. We started treating zoom and crop settings as first-class data that gets preserved with the same care as the videos themselves.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">⚡</div>
+                        <div class="timeline-content">
+                            <h3>The Performance Revolution (v1.31 - v1.50)</h3>
+                            <p><strong>The Challenge:</strong> Making the app blazingly fast and responsive</p>
+                            <p>Performance became our obsession when we realized that even small delays break the flow of analysis. When a coach wants to scrub through a video frame-by-frame, any lag destroys the experience.</p>
+                            
+                            <p>We discovered that the app was doing expensive calculations every single second - modulo operations, database queries, and memory allocations that were completely unnecessary. The gallery picker was taking several seconds to open, which is unacceptable when you're trying to quickly add a video during practice.</p>
+                            
+                            <div class="challenge-box">
+                                <strong>Major Challenge:</strong> The app was doing expensive calculations every second, causing performance issues on older devices. We redesigned the entire tracking system with dual counters, eliminated bottlenecks, and implemented intelligent caching. The result? The gallery picker went from sluggish to instant.
+                            </div>
+                            
+                            <p>This phase taught us that performance isn't just about speed - it's about maintaining the flow of analysis. Every millisecond of delay can break a coach's train of thought or an athlete's focus.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🎨</div>
+                        <div class="timeline-content">
+                            <h3>The Polish Phase (v1.51 - Current)</h3>
+                            <p><strong>The Challenge:</strong> Creating a professional, sustainable product</p>
+                            <p>The latest phase focuses on stability and sustainability. We've eliminated zombie processes, enhanced the shutdown process, and implemented a freemium model that keeps the app free for the sports community while ensuring long-term viability.</p>
+                            
+                            <p>We realized that building a great app isn't just about features - it's about creating something that works reliably, day after day, season after season. Coaches need to trust that their analysis tools will work when they need them most.</p>
+                            
+                            <div class="challenge-box">
+                                <strong>Major Challenge:</strong> App stability during backgrounding and shutdown. We completely rewrote the cleanup process with proper coroutine management and resource cleanup to prevent system issues. No more zombie processes or memory leaks.
+                            </div>
+                            
+                            <p>This phase also introduced our freemium model - keeping all analysis features free while adding optional premium features. Our commitment remains: every athlete should have access to professional-grade analysis tools, regardless of budget.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">56+</div>
+                        <div class="stat-label">Major Versions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2+ Years</div>
+                        <div class="stat-label">Development Time</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6 Videos</div>
+                        <div class="stat-label">Simultaneous Sync</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Free for Athletes</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Innovations -->
+            <div class="story-content">
+                <h2>Technical Breakthroughs</h2>
+                <p>Building PitchGrid required solving problems that didn't have existing solutions. Here are the key technical innovations that make the app possible:</p>
+                
+                <div class="innovations-grid">
+                    <div class="innovation-item">
+                        <h3>🔄 Multi-Video Synchronization Engine</h3>
+                        <p>Created a custom synchronization system that can perfectly sync up to 6 videos of different lengths and frame rates. The engine handles timing calculations, frame interpolation, and maintains sync even during scrubbing operations.</p>
+                        <p><strong>Technical Details:</strong> Uses normalized timelines with custom interpolation algorithms to ensure frame-perfect synchronization across all video streams.</p>
+                    </div>
+                    
+                    <div class="innovation-item">
+                        <h3>🎯 Persistent State Management</h3>
+                        <p>Developed a comprehensive state management system that preserves zoom levels, crop settings, and playback positions across app switching, ads, and system interruptions. Something that took multiple iterations to perfect.</p>
+                        <p><strong>Technical Details:</strong> Implements lifecycle-aware state persistence with automatic recovery mechanisms and conflict resolution.</p>
+                    </div>
+                    
+                    <div class="innovation-item">
+                        <h3>📱 Intelligent Memory Management</h3>
+                        <p>Built a smart resource management system that handles multiple high-resolution videos simultaneously without overwhelming device memory. Includes predictive loading and intelligent caching.</p>
+                        <p><strong>Technical Details:</strong> Uses memory-mapped files, texture streaming, and dynamic quality adjustment based on device capabilities.</p>
+                    </div>
+                    
+                    <div class="innovation-item">
+                        <h3>🛡️ Data Protection Strategy</h3>
+                        <p>Implemented a comprehensive data protection system that preserves user layouts and configurations even when database migrations fail. Prioritizes user data over app functionality.</p>
+                        <p><strong>Technical Details:</strong> Features graceful degradation, automatic backup creation, and recovery mechanisms that preserve user work at all costs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lessons Learned -->
+            <div class="story-content">
+                <h2>Lessons Learned</h2>
+                <p>Building PitchGrid taught us valuable lessons about software development, user experience, and building products that matter:</p>
+                
+                <div class="lessons-grid">
+                    <div class="lesson-item">
+                        <h3>🎯 Build What You Use</h3>
+                        <p>The best insights come from being your own user. Spending time on softball fields using the app revealed problems and opportunities that no amount of theoretical design could uncover.</p>
+                    </div>
+                    
+                    <div class="lesson-item">
+                        <h3>🛡️ User Data is Sacred</h3>
+                        <p>Losing user configurations is worse than app crashes. We learned to prioritize data preservation over perfect functionality, leading to more robust and trustworthy software.</p>
+                    </div>
+                    
+                    <div class="lesson-item">
+                        <h3>⚡ Performance Matters</h3>
+                        <p>In video analysis, every millisecond counts. Small delays break the flow of analysis and frustrate users. Performance isn't just about speed - it's about maintaining focus and flow.</p>
+                    </div>
+                    
+                    <div class="lesson-item">
+                        <h3>🏗️ Simplicity Wins</h3>
+                        <p>Complex solutions often create more problems than they solve. The best features are the ones that feel obvious and natural, even when they're technically sophisticated underneath.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Vision -->
+            <div class="story-content">
+                <h2>Looking Forward</h2>
+                <p>PitchGrid's journey is far from over. We're constantly working on new features and improvements based on feedback from coaches, athletes, and parents in the sports community.</p>
+                
+                <p>Our vision remains the same: make professional-grade video analysis accessible to everyone in youth sports. Whether you're a coach trying to help your team improve, an athlete working on your technique, or a parent supporting your child's development, PitchGrid should be a tool that empowers you to achieve your goals.</p>
+                
+                <p>The future holds exciting possibilities: enhanced AI-powered analysis, collaborative features for teams, and even more intuitive ways to understand and improve athletic performance. But our core commitment will never change - building tools that solve real problems for real people.</p>
+            </div>
+
+            <!-- Story CTA -->
+            <div class="story-cta">
+                <h2>Be Part of Our Story</h2>
+                <p>PitchGrid exists because of the sports community that uses it, provides feedback, and helps us understand what matters most. Whether you're a coach, athlete, or parent, your experience shapes our development.</p>
+                <div class="cta-buttons">
+                    <a href="contact" class="btn btn-primary">Share Your Feedback</a>
+                    <a href="about" class="btn btn-secondary">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Proliferaite</h3>
+                    <p>Softball Dad brings tech to youth sports and beyond</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="https://pitchgrid.proliferaite.com" target="_blank">PitchGrid</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about">About Us</a></li>
+                            <li><a href="our-story">Our Story</a></li>
+                            <li><a href="contact">Contact</a></li>
+                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                            <li><a href="terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Proliferaite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
