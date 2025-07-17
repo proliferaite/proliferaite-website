@@ -34,4 +34,7 @@ Allow: /*.js
 Crawl-delay: 1
 
 # Contact information for crawlers
-# For questions about crawling: business@proliferaite.com 
+# For questions about crawling: business@proliferaite.com
+
+# Subdomain separation - PitchGrid app has its own robots.txt
+# This robots.txt only covers proliferaite.com main domain
